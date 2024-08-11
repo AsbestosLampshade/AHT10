@@ -9,7 +9,7 @@ typedef struct {
   float temperature;
 }HumTemp_t;
 
-class AHT10{
+class AHT10_t{
   public:
     void captureVal();
     HumTemp_t captured;
