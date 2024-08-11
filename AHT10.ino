@@ -5,10 +5,9 @@ void setup() {
   // put your setup code here, to run once:
   Serial.begin(57600);
   Wire.begin();
-  AHT10 sample;
-  sample.captureVal();
-  Serial.println(sample.captured.temperature);
-  Serial.println(sample.captured.humidity);
+  AHT10.captureVal();
+  Serial.println(AHT10.captured.temperature);
+  Serial.println(AHT10.captured.humidity);
 }
 
 
