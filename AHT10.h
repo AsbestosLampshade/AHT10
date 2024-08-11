@@ -8,9 +8,8 @@
 struct HumTem{
   float humidity;
   float temperature;
-}HumTem_t;
+}HumTem;
 
-
-HumTem_t captureVal();
+HumTem captureVal();
 
 #endif
