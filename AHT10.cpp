@@ -1,6 +1,6 @@
 #include "AHT10.h"
 
-void AHT10::captureVal(){
+void AHT10_t::captureVal(){
   unsigned long humidity=0;
   unsigned long temperature=0;
   HumTemp_t out;
