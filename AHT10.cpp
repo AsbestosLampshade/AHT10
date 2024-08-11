@@ -1,14 +1,14 @@
 #include "AHT10.h"
 
-byte b[]={0xAC,0x33,0x00};
-
 void AHT10::captureVal(){
   unsigned long humidity=0;
   unsigned long temperature=0;
   HumTemp_t out;
   //Request Data from AHT10
   Wire.beginTransmission(AHT10_ADDR);
-  Wire.write(b,3);
+  Wire.write(0xAC);
+  Wire.write(0x33);
+  Wire.write(0x00);
   Wire.endTransmission(true);
   Wire.requestFrom(AHT10_ADDR,7,true);
 
