@@ -31,3 +31,5 @@ void AHT10_t::captureVal(){
   captured.humidity=((double)humidity/1048576)*100;
   captured.temperature=(((double)temperature/1048576)*200)-50;
 }
+
+AHT10_t AHT10;
