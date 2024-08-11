@@ -16,4 +16,5 @@ class AHT10_t{
 };
 //HumTemp_t captureVal();
 
+extern AHT10_t AHT10;
 #endif
